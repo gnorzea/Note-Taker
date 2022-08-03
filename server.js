@@ -12,10 +12,17 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.get("/notes", (req, res) => {
-    res.json(notes);
+    res.sendFile(path.join(__dirname, './Develop/public/notes.html'));
 })
 
-app.post('/notes', (req, res) => {
+
+app.get('/api/notes', (req, res) => {
+    res.json(notes.notes);
+})
+
+
+
+app.post('/api/notes', (req, res) => {
 
     req.body.id = notes.notes.length.toString();
     
@@ -24,10 +31,16 @@ app.post('/notes', (req, res) => {
     }else {
         const note = createNewNote(req.body, notes.notes)
         res.json(note);
-    }
-        
-   
+    } 
 });
+
+// app.delete('/api/notes'), (req, res)=> {
+
+// }
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, './Develop/public/index.html'));
+})
 
 function createNewNote(body, notes) {
     const note = body;
@@ -48,6 +61,7 @@ if (!note.text || typeof note.text !== 'string') {
 }
 return true;
 }
+
 
 
 app.listen(PORT, () => {
