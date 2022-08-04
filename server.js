@@ -6,7 +6,6 @@ const fs = require("fs");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
 
-
 app.use(express.static('./Develop/public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -14,7 +13,6 @@ app.use(express.json());
 app.get("/notes", (req, res) => {
     res.sendFile(path.join(__dirname, './Develop/public/notes.html'));
 })
-
 
 app.get('/api/notes', (req, res) => {
     res.json(notes.notes);
@@ -34,8 +32,11 @@ app.post('/api/notes', (req, res) => {
     } 
 });
 
-// app.delete('/api/notes'), (req, res)=> {
-
+// app.delete('/api/notes/:id'), (req, res)=> {
+//    notes = notes.filter(function(obj){
+//     return obj.id !== req.params.id;
+//    })
+//    console.log(notes)
 // }
 
 app.get('*', (req, res) => {

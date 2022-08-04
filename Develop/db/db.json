@@ -1,38 +1,29 @@
 {
   "notes": [
     {
-      "title": "Test Title",
-      "text": "Test text"
+      "title": "Call bank on Friday",
+      "text": "Call bank on Friday",
+      "id": "0"
     },
     {
-      "title": "Test1 Title",
-      "text": "Test1 text",
+      "title": "Reschedule Delivery",
+      "text": "Reschedule Delivery",
       "id": "1"
     },
     {
-      "title": "Test2 Title",
-      "text": "test2",
+      "title": "Finish Payroll",
+      "text": "Finish Payroll",
       "id": "2"
     },
     {
-      "title": "Test3 Title",
-      "text": "test3",
+      "title": "Check in with clients",
+      "text": "Check in with clients",
       "id": "3"
     },
     {
-      "title": "Test4 Title",
-      "text": "test4",
+      "title": "Client lunch on Thursday",
+      "text": "Client lunch on Thursday",
       "id": "4"
-    },
-    {
-      "title": "test5",
-      "text": "test5",
-      "id": "5"
-    },
-    {
-      "title": "save",
-      "text": "save",
-      "id": "6"
     }
   ]
 }
