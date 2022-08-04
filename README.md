@@ -1,16 +1,11 @@
 ## Note-Taker
 
 
-This application is designed to be used to write and save notes
+This note taking application was designed with ExpressJS to write and save notes
 
-## Technology Used
-
-* Javascript
-* HTML
-* CSS
 
 ## Preview
 
-<img src = "./assets/images/forReadme.png" alt = "Website Preview" />  
+<img src = "./Develop/public/assets/images/forReadMe.png" alt = "Website Preview" />  
 
-<a href= "https://gnorzea.github.io/Password-Generator/"> Deployed Link on GitHub</a>
+<a href= "https://git.heroku.com/gnorzea-note-taker-app.git"> Deployed Link on Heroku</a>
